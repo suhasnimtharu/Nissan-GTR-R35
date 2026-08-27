@@ -1,0 +1,26 @@
+<svg width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="black" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4a4a4a" />
+      <stop offset="100%" stop-color="#1a1a1a" />
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFF59D" />
+      <stop offset="100%" stop-color="#FFB300" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="1" dy="3" stdDeviation="2" flood-color="#000" flood-opacity="0.9"/>
+      <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#FFD54F" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+  <g filter="url(#shadow)">
+    <!-- Main Angular Chassis (slightly lifted/scaled) -->
+    <polygon points="2,2 2,24 10,28 12,18 22,26 28,14" fill="url(#black)" stroke="#FFD54F" stroke-width="0.75"/>
+    
+    <!-- Topaz Inner Diamond (Left) -->
+    <polygon points="4.5,8 4.5,16 8.5,18 8.5,10" fill="url(#gold)" />
+    
+    <!-- Topaz Wing (Right) -->
+    <polygon points="12.5,19.5 19,23.5 23.5,16.5 17,12.5" fill="url(#gold)" />
+  </g>
+</svg>
